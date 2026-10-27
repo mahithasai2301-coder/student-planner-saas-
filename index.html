@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Planner SaaS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎓 Student Planner SaaS</h1>
+    <p>Plan your day, set study goals, and track your progress.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>📅 Daily Planner</h2>
+      <form id="taskForm">
+        <input id="task" type="text" placeholder="Enter a task" required>
+        <input id="time" type="time" required>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="taskList"></ul>
+    </section>
+
+    <section class="card">
+      <h2>🎯 Study Goals</h2>
+      <form id="goalForm">
+        <input id="goal" type="text" placeholder="Enter a study goal" required>
+        <button type="submit">Add Goal</button>
+      </form>
+      <ul id="goalList"></ul>
+    </section>
+
+    <section class="card">
+      <h2>📊 Today's Progress</h2>
+      <div class="progress-bar"><div id="progress"></div></div>
+      <p id="progressText">0% completed</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Student Planner SaaS • Stay organized, stay focused.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
